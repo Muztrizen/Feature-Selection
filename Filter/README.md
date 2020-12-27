@@ -1,11 +1,11 @@
 # Filter Method
 
 # List of Method
-1. Pearson's correlation
+1. Pearson's correlation (Numerical features only)
 2. Chi-Squared
 
 
-reference (2 be deleted):
+# reference (2 be deleted):
 An introduction on how to use the Machine Learning package Scikit-learn to perform feature selection on input data.
 This jupyter notebook (hosted on Google Colab) shows Feature Selection example using statistical measures, based on 3 scenarios:
 - Numerical Input, Numerical Output using ***f_regression()_***
