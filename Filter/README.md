@@ -1,8 +1,9 @@
 # Filter Method
 
 # List of Method
-1. Pearson's correlation (Numerical features only)
-2. Chi-Squared
+1. Pearson's correlation (Numerical features)
+2. Chi-Squared (Categorical feature)
+
 
 
 # reference (2 be deleted):
