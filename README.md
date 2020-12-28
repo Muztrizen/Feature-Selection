@@ -16,8 +16,14 @@
 
 ## 3. Method
 1. Filter: Pearson Correlation, Chi-Squared
-2. Wrapper: Recursive Feature Elimination
-3. Embedded: Lasso
+
+2. Wrapper:LASSO, Elastic Net, Ridge Regression
+
+3. Embedded: 
+  1. Forward Selection: The procedure starts with an empty set of features [reduced set]. The best of the original features is determined and added to the reduced set. At each subsequent iteration, the best of the remaining original attributes is added to the set.
+  2. Backward Elimination: The procedure starts with the full set of attributes. At each step, it removes the worst attribute remaining in the set.
+  3. Combination of forward selection and backward elimination: The stepwise forward selection and backward elimination methods can be combined so that, at each step, the procedure selects the best attribute and removes the worst from among the remaining attributes.
+  4. Recursive Feature elimination: Recursive feature elimination performs a greedy search to find the best performing feature subset. It iteratively creates models and determines the best or the worst performing feature at each iteration. It constructs the subsequent models with the left features until all the features are explored. It then ranks the features based on the order of their elimination. In the worst case, if a dataset contains N number of features RFE will do a greedy search for 2N combinations of features.
 
 Note: wrapper and embedded methods are normally “fine-tuned” to optimize the classifier performance, making them ideal if the goal is to objectively find out an ideal set of predictors for a specific learning algorithm or model.
 
